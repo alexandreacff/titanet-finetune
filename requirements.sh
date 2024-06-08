@@ -9,7 +9,7 @@ pip install text-unidecode
 unset DEBIAN_FRONTEND
 
 # Install NeMo
-BRANCH = 'main'
+BRANCH='main'
 python -m pip install git+https://github.com/NVIDIA/NeMo.git@$BRANCH#egg=nemo_toolkit[asr]
 
 # Install TorchAudio
