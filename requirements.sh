@@ -1,7 +1,12 @@
+# Define a variavel DEBIAN_FRONTEND para noninteractive
+export DEBIAN_FRONTEND=noninteractive
+
 # Install dependencies
 pip install wget
-apt-get install sox libsndfile1 ffmpeg
+apt-get install -y sox libsndfile1 ffmpeg
 pip install text-unidecode
+
+unset DEBIAN_FRONTEND
 
 # Install NeMo
 BRANCH = 'main'
