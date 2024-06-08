@@ -33,7 +33,7 @@ cd titanet-finetune
 
 ### Passo 2: Garantir as Dependências
 
-Certifique-se de que todas as dependências necessárias para o script Python `titanet_finetune.py` estejam instaladas. Você pode fazer isso cutilizando uma imagem docker e instalando as dependências presentes em um arquivo `requirements.sh`:
+Certifique-se de que todas as dependências necessárias para o script Python `titanet_finetune.py` estejam instaladas. Você pode fazer isso utilizando uma imagem docker e instalando as dependências presentes em um arquivo `requirements.sh`:
 
 ```sh
 docker run -it --rm --gpus-all --volume $PWD:/workspace --ipc host pytorch/pytorch:2.1.0-cuda12.1-cudnn8-devel bash
