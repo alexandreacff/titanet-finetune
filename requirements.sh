@@ -1,4 +1,4 @@
-apt-get update
+apt-get update && apt-get install git
 
 # Define a variavel DEBIAN_FRONTEND para noninteractive
 export DEBIAN_FRONTEND=noninteractive
