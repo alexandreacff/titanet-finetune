@@ -25,12 +25,12 @@ finetune_config.model.decoder.num_classes = 10
 accelerator = 'gpu' if torch.cuda.is_available() else 'cpu'
 print(accelerator)
 
-config.trainer.accelerator = accelerator
+finetune_config.trainer.accelerator = accelerator
 
-trainer = pl.Trainer(**config.trainer)
+trainer = pl.Trainer(**finetune_config.trainer)
 
-log_dir = exp_manager(trainer, config.get("exp_manager", None))
+log_dir = exp_manager(trainer, finetune_config.get("exp_manager", None))
 print(f"Experimento sendo salvo em: {log_dir}")
 
-speaker_model = nemo_asr.models.EncDecSpeakerLabelModel(cfg=config.model, trainer=trainer)
+speaker_model = nemo_asr.models.EncDecSpeakerLabelModel(cfg=finetune_config.model, trainer=trainer)
 trainer.fit(speaker_model)
