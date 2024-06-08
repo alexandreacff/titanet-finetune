@@ -33,12 +33,14 @@ cd titanet-finetune
 
 ### Passo 2: Garantir as Dependências
 
-Certifique-se de que todas as dependências necessárias para o script Python `titanet_finetune.py` estejam instaladas. Você pode fazer isso criando um ambiente virtual e instalando as dependências listadas em um arquivo `requirements.txt` (caso disponível):
+Certifique-se de que todas as dependências necessárias para o script Python `titanet_finetune.py` estejam instaladas. Você pode fazer isso cutilizando uma imagem docker e instalando as dependências presentes em um arquivo `requirements.sh`:
 
 ```sh
-python3 -m venv env
-source env/bin/activate
-pip install -r requirements.txt
+Docker run -it --rm --gpus-all --volume $PWD:/workspace --ipc host X bash
+```
+
+```sh
+source requirements.sh
 ```
 
 ### Passo 3: Executar o Script
