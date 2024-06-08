@@ -10,7 +10,8 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 ```
 source requirements.sh
 ```
+> Testes realizados foram feiros utilizado a imagem docker X.
 
- # Guia de Uso
+ ## ☕ Guia de Uso
 
  
