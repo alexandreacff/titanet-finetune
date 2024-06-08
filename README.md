@@ -12,15 +12,15 @@ source requirements.sh
 ```
 > Testes realizados foram feiros utilizado a imagem docker X.
 
- ## ☕ Guia de Uso
-
-## Descrição dos Arquivos
+## 📌 Descrição dos Arquivos
 
 - **run.sh**: Script Bash que verifica a existência do argumento de caminho do diretório e executa o script Python `titanet_finetune.py` com o caminho fornecido.
 - **titanet_finetune.py**: Script Python que realiza o processo de fine-tuning do modelo Titanet utilizando os arquivos de manifestos JSON presentes no diretório fornecido.
 - **requirements.sh**: Lista de dependências necessárias para executar o script `titanet_finetune.py`.
 - **conf/titanet-finetune.yaml**: Arquivo de configuração YAML que define os parâmetros e hiperparâmetros para o processo de fine-tuning do modelo Titanet.
 
+
+ ## ☕ Guia de Uso
 
 ### Passo 1: Clonar o Repositório
 
