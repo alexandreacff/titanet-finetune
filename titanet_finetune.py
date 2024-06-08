@@ -13,7 +13,7 @@ train_manifest = os.path.join(manifest_path, 'train.json')
 validation_manifest = os.path.join(manifest_path, 'dev.json')
 test_manifest = os.path.join(manifest_path, 'test.json')
 
-MODEL_CONFIG = os.path.join(NEMO_ROOT,'conf/titanet-finetune.yaml')
+MODEL_CONFIG = 'conf/titanet-finetune.yaml'
 finetune_config = OmegaConf.load(MODEL_CONFIG)
 print(OmegaConf.to_yaml(finetune_config))
 
