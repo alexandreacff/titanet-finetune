@@ -1,3 +1,5 @@
+apt-get update
+
 # Define a variavel DEBIAN_FRONTEND para noninteractive
 export DEBIAN_FRONTEND=noninteractive
 
