@@ -144,7 +144,7 @@ model:
 
 trainer:
   devices: 1 # number of gpus (original titanet-large was trained on 4 nodes with 8 gpus each)
-  max_epochs: 10
+  max_epochs: 300
   max_steps: -1 # computed at runtime if not set
   num_nodes: 1
   accelerator: gpu
