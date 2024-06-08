@@ -10,7 +10,7 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 ```
 source requirements.sh
 ```
-> Testes realizados foram feiros utilizado a imagem docker X.
+> Testes realizados foram feiros utilizado a imagem docker `pytorch/pytorch:2.1.0-cuda12.1-cudnn8-devel`.
 
 ## 📌 Descrição dos Arquivos
 
@@ -36,7 +36,7 @@ cd titanet-finetune
 Certifique-se de que todas as dependências necessárias para o script Python `titanet_finetune.py` estejam instaladas. Você pode fazer isso cutilizando uma imagem docker e instalando as dependências presentes em um arquivo `requirements.sh`:
 
 ```sh
-Docker run -it --rm --gpus-all --volume $PWD:/workspace --ipc host X bash
+docker run -it --rm --gpus-all --volume $PWD:/workspace --ipc host pytorch/pytorch:2.1.0-cuda12.1-cudnn8-devel bash
 ```
 
 ```sh
