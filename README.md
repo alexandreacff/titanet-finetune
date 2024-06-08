@@ -6,7 +6,7 @@ Script para executar o ajuste fino do Titanet rapidamente
 Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
 - Ambiente com python.
-- Executar o .sh de requirements:
+- Baixar pacotes pré-requisitos através do .sh de requirements:
 ```
 source requirements.sh
 ```
