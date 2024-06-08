@@ -20,7 +20,7 @@ print(OmegaConf.to_yaml(finetune_config))
 finetune_config.model.train_ds.manifest_filepath = train_manifest
 finetune_config.model.validation_ds.manifest_filepath = validation_manifest
 
-finetune_config.model.decoder.num_classes = 10
+finetune_config.model.decoder.num_classes = sys.argv[2]
 
 accelerator = 'gpu' if torch.cuda.is_available() else 'cpu'
 print(accelerator)
