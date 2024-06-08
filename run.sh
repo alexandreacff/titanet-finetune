@@ -8,5 +8,6 @@ if [ -z "$1" ]; then
 fi
 
 DATA_DIR="$1"
+NUM_CLASSES=40
 
-python3 titanet_finetune.py $DATA_DIR
+python3 titanet_finetune.py $DATA_DIR $NUM_CLASSES
