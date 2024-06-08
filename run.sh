@@ -9,4 +9,4 @@ fi
 
 DATA_DIR="$1"
 
-python3 titanet_finutune.py $DATA_DIR
+python3 titanet_finetune.py $DATA_DIR
